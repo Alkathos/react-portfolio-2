@@ -14,10 +14,12 @@ import Resume from './components/Resume';
 
 function App() {
   return (
+    <>
+    
     <div className="portfolio-bg">
       <div className="content-wrap">
           <Router>
-            <Navigation />
+          <Navigation />
             <Switch>
               <Route path='/' exact component={Bio} />
               <Route path='/portfolio' component={Portfolio} />
@@ -26,11 +28,9 @@ function App() {
             </Switch>
           </Router>
       </div>
-
       <Footer />
-
     </div>
-        
+    </>    
   );     
 }
 

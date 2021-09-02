@@ -5,7 +5,6 @@
   min-height: 100vh;
 }
 
-
 .content-wrap {
   flex: 1;
 }
@@ -29,11 +28,19 @@
   color: #f5a962
 }
 
-.nav-links {
-  text-align: right;
-  padding: 10px;
+.myName {
+  text-align: left;
+  font-size: 48px;
+}
+
+.nav-link-container {
+  color: #125d98;
+
 }
 
 nav {
   background-color: #f5a962;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 36px;
+  text-align: right;
 }

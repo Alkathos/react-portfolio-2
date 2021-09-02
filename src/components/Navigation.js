@@ -5,14 +5,14 @@ import Navbar from 'react-bootstrap/Navbar'
 
 function Navigation() {
     return (
-        <div>
+        <div className="nav-link-container">
             <Navbar>
-                    <h1>Fernando Zaldivar</h1>
+                    <span className="myName"><h1>Fernando Zaldivar</h1></span>
                     <div>
-                        <NavLink className="nav-links" to="/">Bio</NavLink>
-                        <NavLink className="nav-links" to="/portfolio">Portfolio</NavLink>
-                        <NavLink className="nav-links" to="/resume">Resume</NavLink>
-                        <NavLink className="nav-links" to="/contact">Contact</NavLink>
+                        <NavLink to="/">Bio</NavLink>
+                        <NavLink to="/portfolio">Portfolio</NavLink>
+                        <NavLink to="/resume">Resume</NavLink>
+                        <NavLink to="/contact">Contact</NavLink>
                     </div>
             </Navbar>
         </div>
