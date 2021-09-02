@@ -7,10 +7,10 @@ function Footer() {
   return (
     <div className="myfooter">
       <div className='footer-content'>
-        <FontAwesomeIcon icon={faGithubSquare} size='7x' />  
+        <a href='https://github.com/Alkathos' target="_blank" rel='noreferrer'><FontAwesomeIcon icon={faGithubSquare} size='7x' /></a>  
       </div>
       <div className='footer-content'>
-        <FontAwesomeIcon icon={faLinkedin} size='7x' />
+        <a href='https://www.linkedin.com/in/fernando-zaldivar-jr' target="_blank" rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} size='7x' /></a>
       </div> 
     </div>
   );

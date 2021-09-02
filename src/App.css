@@ -21,6 +21,14 @@
   margin: 15px;
 }
 
+.footer-content a {
+  color: #dddddd;
+}
+
+.footer-content a:hover {
+  color: #f5a962
+}
+
 .nav-links {
   text-align: right;
   padding: 10px;
