@@ -6,12 +6,12 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 function Footer() {
   return (
     <div className="myfooter">
-        <div className="col">
-          <div className="row">
-            <FontAwesomeIcon icon={faGithubSquare} size='9x' />
-            <FontAwesomeIcon icon={faLinkedin} size='9x' />       
-          </div>
-        </div>   
+      <div className='footer-content'>
+        <FontAwesomeIcon icon={faGithubSquare} size='7x' />  
+      </div>
+      <div className='footer-content'>
+        <FontAwesomeIcon icon={faLinkedin} size='7x' />
+      </div> 
     </div>
   );
 }

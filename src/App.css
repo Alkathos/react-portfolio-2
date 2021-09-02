@@ -5,9 +5,6 @@
   min-height: 100vh;
 }
 
-.text-center {
-  text-align: center;
-}
 
 .content-wrap {
   flex: 1;
@@ -16,11 +13,12 @@
 .myfooter {
   background-color: #3c8dad;
   color:#dddddd;
-  padding-top: 1em;
+  justify-content: center;
+  display: inline-flex;
 }
 
-.col {
-  text-align: center;
+.footer-content {
+  margin: 15px;
 }
 
 .nav-links {
