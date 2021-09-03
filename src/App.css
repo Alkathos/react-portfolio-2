@@ -77,7 +77,6 @@
 
 .nav-link-container a {
   position: relative; 
-  display: row;
   text-align: right;
   color:#125d98;
   border-radius: 50%;
@@ -90,8 +89,11 @@
   color: #dddddd;
 }
 
+
 .nav-link-header a{
-  width: 75vw;
+  right: 0;
+  margin: 10px;
+  text-align: end;
 }
 
 .nav-links {
