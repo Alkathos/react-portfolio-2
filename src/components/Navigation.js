@@ -8,11 +8,11 @@ function Navigation() {
         <div className="nav-link-container">
             <Navbar>
                     <span className="myName"><h1>Fernando Zaldivar</h1></span>
-                    <div>
-                        <NavLink to="/">Bio</NavLink>
-                        <NavLink to="/portfolio">Portfolio</NavLink>
-                        <NavLink to="/resume">Resume</NavLink>
-                        <NavLink to="/contact">Contact</NavLink>
+                    <div className="nav-link-header ml-auto">
+                        <NavLink className="nav-links" to="/">Bio</NavLink>
+                        <NavLink className="nav-links" to="/portfolio">Portfolio</NavLink>
+                        <NavLink className="nav-links" to="/resume">Resume</NavLink>
+                        <NavLink className="nav-links" to="/contact">Contact</NavLink>
                     </div>
             </Navbar>
         </div>
