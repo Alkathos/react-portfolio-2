@@ -8,7 +8,7 @@ import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 import Bio from './components/Bio';
 import Contact from './components/Contact';
-import Portfolio from './components/Portfolio';
+import Project from './components/Project';
 import Resume from './components/Resume';
 
 
@@ -22,7 +22,7 @@ function App() {
           <Navigation />
             <Switch>
               <Route path='/' exact component={Bio} />
-              <Route path='/portfolio' component={Portfolio} />
+              <Route path='/projects' component={Project} />
               <Route path='/resume' component={Resume} />
               <Route path='/contact' component={Contact} />
             </Switch>

@@ -1,6 +1,6 @@
 
 
-function Portfolio() {
+function Project() {
     return (
       <div>
         <div className='container'>
@@ -30,9 +30,7 @@ function Portfolio() {
           </div>
         </div>
       </div>
-      
-
     );
   }
   
-  export default Portfolio;
+  export default Project;
