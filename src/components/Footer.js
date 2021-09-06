@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
   return (
@@ -11,7 +12,10 @@ function Footer() {
       </div>
       <div className='footer-content'>
         <a href='https://www.linkedin.com/in/fernando-zaldivar-jr' target="_blank" rel='noreferrer'><FontAwesomeIcon icon={faLinkedin} size='7x' /></a>
-      </div> 
+      </div>
+      <div className='footer-content'>
+        <a href='https://www.instagram.com/fernandozaldivarjr/' target="_blank" rel='noreferrer'><FontAwesomeIcon icon={faInstagramSquare} size='7x' /></a>
+      </div>
     </div>
   );
 }
