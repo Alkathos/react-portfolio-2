@@ -145,10 +145,25 @@ h1 {
   margin-left: 4.5em;
 }
 
-.project-link {
-
-}
-
 .card-margin {
   padding: 10px;
+}
+
+/* ====================@media queries=================== */
+
+@media screen and (max-width: 850px) {
+  
+  .nav-link-header a{
+    position: relative;
+    top: 0vh;
+    left: -50vw;
+    display: block;
+    margin: -10px;
+  } 
+
+  .myName {
+    font-family: var(--header-text);
+    font-size: 36px;
+    font-weight: 900;
+  }
 }
