@@ -21,10 +21,10 @@ function App() {
           <Router>
           <Navigation />
             <Switch>
-              <Route path='/' exact component={Bio} />
-              <Route path='/projects' component={Project} />
-              <Route path='/resume' component={Resume} />
-              <Route path='/contact' component={Contact} />
+              <Route path={process.env.PUBLIC_URL + '/'} exact component={Bio} />
+              <Route path={process.env.PUBLIC_URL + '/projects'} component={Project} />
+              <Route path={process.env.PUBLIC_URL + '/resume'} component={Resume} />
+              <Route path={process.env.PUBLIC_URL + '/contact'} component={Contact} />
             </Switch>
           </Router>
       </div>
