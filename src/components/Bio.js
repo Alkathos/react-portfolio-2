@@ -13,8 +13,8 @@ function Bio() {
                 <p>
                     Bilingual Junior Web Developer that is looking to learn new techniques and use creative solutions for modern day problems.
                     Received a certificate in Full Stack from University of Miami. My major strength lies in working in teams.
-                    I have 4 years in management experience so being able to delegate tasks and evaluate team strengths and weakness
-                    is a skill I am proficient in. Even if not part of a team I can still excel on my own and provide results. 
+                    I have 4 years in management experience. I am capable of leading many individuals from all walks of life.
+                    I excel in problem-solving, emotional intelligence and accountability. I work well individually as well as on a team; adaptable and collaborative. 
                 </p>
               </div>
             </div>
