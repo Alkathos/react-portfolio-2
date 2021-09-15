@@ -7,7 +7,7 @@ function Bio() {
           <div className='container'>
             <div className='row'>
               <div className='col'>
-                <img src={Me} className='my-photo' />
+                <img alt="Fernando Zaldivar" src={Me} className='my-photo' />
               </div>
               <div className='col center-content'>
                 <p>
