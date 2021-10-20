@@ -4,7 +4,7 @@
   --dark-blue:#125d98;
   --orange: #f5a962;
   --light-blue: #3c8dad;
-  --header-text: 'Permanent Marker', cursive;
+  --header-text: 'Roboto', sans-serif;
   --body-text: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -116,11 +116,20 @@
   text-decoration: none;
 }
 
+.myName {
+  font-size: 40px;
+  font-weight: 300;
+}
+
 /* ====================Images=================== */
 
 .my-photo {
   max-width: 70%;
   max-height: 80%;
+}
+
+.my-photo {
+  margin-top: 5em;
 }
 
 /* ====================Pages=================== */
@@ -129,6 +138,10 @@
   text-align: center;
   position: relative;
   top: 50%;
+}
+
+#bio {
+  margin-top: 16em;
 }
 
 body {
@@ -169,7 +182,6 @@ h1 {
 
   .myName {
     font-family: var(--header-text);
-    font-size: 36px;
-    font-weight: 900;
+    font-size: 24px;
   }
 }
