@@ -149,6 +149,10 @@ h1 {
   padding: 10px;
 }
 
+.btn {
+  background-color: var(--orange);
+}
+
 /* ====================@media queries=================== */
 
 @media screen and (max-width: 850px) {

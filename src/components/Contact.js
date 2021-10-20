@@ -1,94 +1,37 @@
-import React, { useState } from 'react';
-import { Container, Form, Row, Col, Button } from 'react-bootstrap';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
+import { Form, Button } from 'react-bootstrap';
 
-const marginBottom = {
-    marginBottom: '8rem'
-};
 
-const Contact=()=>{
-  
-    const [firstName,setFirstName]=useState('');
-    const [lastName,setLastName]=useState('');
-    const [email,setEmail]=useState('');
-    const [message,setMessage]=useState('');
+function Contact() {
+  const [state, handleSubmit] = useForm("xknkabjy");
+  if (state.succeeded) {
+      return <p>Thank you for your message!</p>;
+  }
 
-    const encode= (data)=>{
-        return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&");
-    };
+  return (
 
-    const handleSubmit=(event)=> {
-        event.preventDefault();
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", firstName, lastName, email, message }),
-        })
-          .then(() => alert("Message sent!"))
-          .catch((error) => alert(error));
-      };
+    <Form onSubmit={handleSubmit} className="container">
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label htmlFor="input" style={{ marginTop: '20px' }}>First and Last Name</Form.Label>
+        <Form.Control type="input" placeholder="Full Name" id="fullname" name="fullname" />
+            <ValidationError prefix="Fullname" field="fullname" errors={state.errors} />
+        </Form.Group>
 
-    return(
-        <Container style={marginBottom}>
-            <Container >
-                <h1>Contact Me</h1>
-                <p></p>
-            </Container>
+        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+        <Form.Label htmlFor="email" >Email address</Form.Label>
+        <Form.Control type="email" placeholder="name@example.com" id="email" name="email" />
+            <ValidationError prefix="Email" field="email" errors={state.errors} />
+        </Form.Group>
 
-            <Form netlify name='contact' onSubmit={handleSubmit}>
-                <Row>
-                    <Col>
-                        <Form.Group className="mb-3">
-                            <Form.Label>First Name</Form.Label>
-                            <Form.Control 
-                                name='firstName' 
-                                onChange={(event)=>setFirstName(event.target.value)}
-                                type="text" 
-                                placeholder="Fernando" />
-                        </Form.Group>
-                    </Col>
-                    <Col>
-                        <Form.Group className="mb-3">
-                            <Form.Label>Last Name</Form.Label>
-                            <Form.Control 
-                            name='lastName' 
-                            onChange={(event)=>setLastName(event.target.value)}
-                            type="text" 
-                            placeholder="Zaldivar" />
-                        </Form.Group>
-                    </Col>
-                </Row>
-
-                
-                <Form.Group className="mb-3">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control 
-                    name='email' 
-                    onChange={(event)=>setEmail(event.target.value)}
-                    type="email" 
-                    placeholder="name@example.com" />
-                </Form.Group>
-                <Form.Group className="mb-3">
-                    <Form.Label>Message</Form.Label>
-                    <Form.Control 
-                    name='message'
-                    nChange={(event)=>setMessage(event.target.value)} as="textarea" 
-                    rows={3} />
-                </Form.Group>
-
-                <Form.Group className="mb-3 float-end" controlId="formBasicCheckbox">
-                    <Button type="submit" onSubmit={handleSubmit}>
-                        Submit
-                    </Button>
-                </Form.Group>
-  
-            </Form>   
-            
-        </Container>
-    )
+        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+        <Form.Label>Let me know if you want to work with me.</Form.Label>
+        <Form.Control as="textarea" rows={3} id="message" name="message" />
+        <ValidationError prefix="Message" field="message" errors={state.errors} />
+        </Form.Group>
+        <Button className="btn" type="submit" disabled={state.submitting}>Send Message</Button>
+    </Form>
+  );
 }
 
 export default Contact;

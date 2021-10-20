@@ -8,7 +8,7 @@ import Travlr from '../img/travlr.png';
 import Note from '../img/note-taker.png';
 import Book from '../img/book-search.png';
 
-const bgColor ='#3c8dad';
+// const bgColor ='#3c8dad';
 
 function Project() {
     return (
