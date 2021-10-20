@@ -12,11 +12,20 @@ function Contact() {
   return (
 
     <Form onSubmit={handleSubmit} className="container">
-        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-        <Form.Label htmlFor="input" style={{ marginTop: '20px' }}>First and Last Name</Form.Label>
-        <Form.Control type="input" placeholder="Full Name" id="fullname" name="fullname" />
-            <ValidationError prefix="Fullname" field="fullname" errors={state.errors} />
-        </Form.Group>
+        <div>
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label htmlFor="input" style={{ marginTop: '20px' }}>First Name</Form.Label>
+            <Form.Control type="input" placeholder="First Name" id="firstname" name="firstname" />
+                <ValidationError prefix="Fullname" field="fullname" errors={state.errors} />
+            </Form.Group>
+
+            <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+            <Form.Label htmlFor="input">Last Name</Form.Label>
+            <Form.Control type="input" placeholder="Last Name" id="lastname" name="lastname" />
+                <ValidationError prefix="Fullname" field="fullname" errors={state.errors} />
+            </Form.Group>
+        </div>
+
 
         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
         <Form.Label htmlFor="email" >Email address</Form.Label>

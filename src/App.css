@@ -151,7 +151,9 @@ h1 {
 
 .btn {
   background-color: var(--orange);
+  margin-bottom: 30px;
 }
+
 
 /* ====================@media queries=================== */
 
